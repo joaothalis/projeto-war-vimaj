@@ -1,5 +1,9 @@
 package com.vimaj.model;
 
-public class Rolagem {
+import java.util.List;
 
+public class Rolagem {
+	private List<Rolagem> rolagem;
+	
+	private void rolarDados(String cor, int qtdExercitos) {}
 }
