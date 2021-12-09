@@ -4,8 +4,23 @@ import java.util.List;
 
 public class Defesa {
 	public String cor;
+	public Territorio defensor;
 	public int tropasDisp;
-	
-	private List<Rolagem> rolarDados(String cor, int qtdExercitos){return null;}
-	private boolean verificarQtdExercitos(Territorio atacante) {return false;}
+
+	public List<Integer> rolarDados(String cor, int qtdExercitos) {
+		Rolagem a = new Rolagem(cor, qtdExercitos);
+		 a.rolarDados(cor, qtdExercitos);
+		 
+		return a;
+	}
+
+	public boolean verificarQtdExercitos(Territorio defensor) {
+		int quantidade;
+		quantidade = defensor.QtdExercitos(defensor);
+		if (quantidade > 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
