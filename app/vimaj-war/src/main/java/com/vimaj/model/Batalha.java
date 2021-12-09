@@ -3,13 +3,26 @@ package com.vimaj.model;
 public class Batalha {
 	public Territorio atacante;
 	public Territorio Defensor;
+	public Contiguidade c;
+
+	public Batalha(Contiguidade C) {
+		this.c = C;
+	}
 
 	public boolean verificarContiguidade(Territorio atacante, Territorio defensor) {
-		return false;
+		boolean resp;
+		resp = c.Verificarcontiguidade(atacante, defensor);
+		return resp;
 	}
 
 	public boolean verificarQtdExercitos(Territorio atacante) {
-		return false;
+		int quantidade;
+		quantidade = atacante.QtdExercitos(atacante);
+		if (quantidade > 1) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public boolean verificarAutoAtaque(Territorio atacante, Territorio defensor) {
