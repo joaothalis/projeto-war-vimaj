@@ -12,7 +12,7 @@ public class warTest {
 		Jogador j1 = new Jogador();
 		Jogador j2 = new Jogador();
 
-		Batalha b = new Batalha();
+		//Batalha b = new Batalha();
 		BatalhaController B = new BatalhaController();
 
 		Contiguidade C = new Contiguidade();
