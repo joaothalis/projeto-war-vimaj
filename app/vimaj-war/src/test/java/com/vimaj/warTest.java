@@ -30,7 +30,7 @@ public class warTest {
 		LinhaVizinhanca l1 = new LinhaVizinhanca(v1,v2);
 		LinhaVizinhanca l2 = new LinhaVizinhanca(v1,v3);
 		LinhaVizinhanca l3 = new LinhaVizinhanca(v4,v5);
-		v1.setAdj(l1);
+		v1.addAdj(l1);
 		
 		Territorio China;
 		Territorio Japao;

@@ -12,7 +12,7 @@ public class Vertice {
         this.adj = new ArrayList<LinhaVizinhanca>();
     }
 
-    void addAdj(LinhaVizinhanca e) {
+   public void addAdj(LinhaVizinhanca e) {
         getAdj().add(e);
     }
 
@@ -23,7 +23,5 @@ public class Vertice {
 	public List<LinhaVizinhanca> getAdj() {
 		return adj;
 	}
-    public void setAdj(List<LinhaVizinhanca> adj) {
-		this.adj = adj;
-	}
+    
 }
