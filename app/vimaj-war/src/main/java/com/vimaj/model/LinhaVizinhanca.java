@@ -4,7 +4,7 @@ public class LinhaVizinhanca {
 	 Vertice origem;
      Vertice destino;
 
-     LinhaVizinhanca(Vertice origem, Vertice destino) {
+     public LinhaVizinhanca(Vertice origem, Vertice destino) {
          this.origem = origem;
          this.destino = destino;
      }

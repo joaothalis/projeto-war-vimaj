@@ -25,7 +25,7 @@ public class Contiguidade {
 		return e;
 	}
 
-	boolean Verificarcontiguidade(Territorio a, Territorio b) {
+	public boolean Verificarcontiguidade(Territorio a, Territorio b) {
 		String inicial = a.getNome();
 		String fronteira = b.getNome();
 		for (int i = 0; i < vertices.size(); i++) {

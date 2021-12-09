@@ -23,5 +23,7 @@ public class Vertice {
 	public List<LinhaVizinhanca> getAdj() {
 		return adj;
 	}
-    
+    public void setAdj(List<LinhaVizinhanca> adj) {
+		this.adj = adj;
+	}
 }

@@ -26,6 +26,12 @@ public class warTest {
 		Vertice v2 = new Vertice("Japao");
 		Vertice v3 = new Vertice("India");
 		Vertice v4 = new Vertice("Brasil");
+		Vertice v5 = new Vertice("Argentina");
+		LinhaVizinhanca l1 = new LinhaVizinhanca(v1,v2);
+		LinhaVizinhanca l2 = new LinhaVizinhanca(v1,v3);
+		LinhaVizinhanca l3 = new LinhaVizinhanca(v4,v5);
+		v1.setAdj(l1);
+		
 		Territorio China;
 		Territorio Japao;
 		Territorio India;
