@@ -17,6 +17,9 @@ public class DefesaTest {
 	private Vertice v1;
 	private Vertice v2;
 	private Vertice v3;
+	private LinhaVizinhanca l1;
+	private LinhaVizinhanca l2;
+	
 	
 	public DefesaTest() {
 		initializeClass();
@@ -36,24 +39,37 @@ public class DefesaTest {
 		this.v2 = new Vertice("Peru");
 		this.v3 = new Vertice("Chile");
 		
+		this.l1 = new LinhaVizinhanca(this.v1, this.v2);
+		this.l2 = new LinhaVizinhanca(this.v2, this.v1);
+		
+		this.v1.addAdj(l1);
+		this.v2.addAdj(l2);
+		
 		this.vizinhosAtacante = new Contiguidade();
 		this.vizinhosDefensor = new Contiguidade();
 		this.vizinhosChile = new Contiguidade();
 		
-		this.vizinhosAtacante.addVertice(v1);
 		this.vizinhosAtacante.addVertice(v2);
-		this.vizinhosAtacante.addVertice(v3);
+		
+		this.brasil.setContiguidade(vizinhosAtacante);
+		
+		this.vizinhosDefensor.addVertice(v1);
+		
+		this.peru.setContiguidade(vizinhosDefensor);
+		
+		this.vizinhosAtacante.addAresta(this.v1, this.v2);
+		this.vizinhosDefensor.addAresta(this.v2, this.v1);
+		
 	}
 	
 	@Test
 	public void test01EhContiguidade() {
-		Contiguidade exemplo = new Contiguidade();
-		boolean actual = exemplo.Verificarcontiguidade(chile, brasil);
+		boolean actual = this.vizinhosAtacante.Verificarcontiguidade(peru, brasil);
 		Assert.assertEquals(false, actual);		
 	}
 	
 	@Test
-	public void test02() {
+	public void test02QtdDados() {
 		
 	}
 }
