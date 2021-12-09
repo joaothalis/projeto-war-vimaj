@@ -8,11 +8,9 @@ public class Defesa {
 	public int tropasDisp;
 
 	public List<Integer> rolarDados(String cor, int qtdExercitos) {
-<<<<<<< Updated upstream
-		Rolagem a = new Rolagem(cor, qtdExercitos);
-		 a.rolarDados(cor, qtdExercitos);
-		 
-		return a;
+
+		Rolagem a = new Rolagem(cor, qtdExercitos);		 
+		return a.rolarDados(cor, qtdExercitos);
 	}
 
 	public boolean verificarQtdExercitos(Territorio defensor) {
@@ -23,12 +21,6 @@ public class Defesa {
 		} else {
 			return false;
 		}
-=======
-		return null;
-	}
 
-	public boolean verificarQtdExercitos(Territorio atacante) {
-		return false;
->>>>>>> Stashed changes
 	}
 }

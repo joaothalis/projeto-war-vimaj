@@ -19,10 +19,10 @@ public class BatalhaTest {
 	static int min = 1;
 	static int max = 6;
 	private static List<Integer> resultadoRolagem = new ArrayList<>();
-<<<<<<< Updated upstream
-=======
+
+
 	Rolagem r = new Rolagem("x", 30);
->>>>>>> Stashed changes
+
 
 	@Test
 	public void test01MaximoDeDados() {

@@ -5,15 +5,18 @@ import java.util.List;
 
 import com.vimaj.model.Ataque;
 import com.vimaj.model.Batalha;
+import com.vimaj.model.Contiguidade;
 import com.vimaj.model.Defesa;
 import com.vimaj.model.Territorio;
 
 public class BatalhaController extends Batalha {
 
+	private static Contiguidade c;
 	List<Integer> dadosAtacante;
 	List<Integer> dadosDefensor;
 
 	public BatalhaController(Ataque jogadorAtacante, Defesa jogadorDefensor) {
+		super(c);
 		this.dadosAtacante = atacar(jogadorAtacante.atacante);
 		this.dadosDefensor = defender(jogadorDefensor.defensor);
 		this.embateDados(jogadorAtacante.atacante, jogadorDefensor.defensor, dadosAtacante, dadosDefensor);
