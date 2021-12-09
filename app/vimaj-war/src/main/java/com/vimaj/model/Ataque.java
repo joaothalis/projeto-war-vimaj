@@ -11,11 +11,17 @@ public class Ataque {
 	//	this.atacante = atacante;
 	}
 
-	private List<Rolagem> rolarDados(String cor, int qtdExercitos) {
+	public List<Integer> rolarDados(String cor, int qtdExercitos) {
 		return null;
 	}
 
-	private boolean verificarQtdExercitos(Territorio atacante) {
-		return false;
+	public boolean verificarQtdExercitos(Territorio atacante) {
+		int quantidade;
+		quantidade = atacante.QtdExercitos(atacante);
+		if (quantidade > 1) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
