@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Territorio {
 	private String nome;
+	private Contiguidade fronteira;
 	public Exercito ocupacao;
 	ArrayList<Exercito> ListaExercitos = new ArrayList<>();
 	
@@ -18,5 +19,8 @@ public class Territorio {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
+	public void setContiguidade(Contiguidade fronteira) {
+		this.fronteira = fronteira;
+	}
 }
