@@ -28,7 +28,7 @@ public class warTest {
 		Territorio t4 = new Territorio("Brasil");
 		Territorio t5 = new Territorio("Argentina");
 		
-	    C.addVertice(v1);
+	    /*C.addVertice(v1);
 		C.addAresta(China, Japao)
 
 		
@@ -50,7 +50,7 @@ public class warTest {
 		v2.addAdj(l3);
 		v3.addAdj(l4);
 		v4.addAdj(l5);
-		v5.addAdj(l6);
+		v5.addAdj(l6);*/
 
 	}
 }
