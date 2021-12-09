@@ -11,7 +11,7 @@ public class Batalha {
 
 	public boolean verificarContiguidade(Territorio atacante, Territorio defensor) {
 		boolean resp;
-		resp = c.Verificarcontiguidade(atacante, defensor);
+		resp = c.verificarContiguidade(atacante, defensor);
 		return resp;
 	}
 
