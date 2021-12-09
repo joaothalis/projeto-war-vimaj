@@ -31,12 +31,10 @@ public class Contiguidade {
 		for (int i = 0; i < vertices.size(); i++) {
 			if (vertices.get(i).getNome().equals(inicial)) {
 				for (int j = 0; j < arestas.size(); j++) {
-					if (vertices.get(i).getAdj().get(j).getOrigem().equals(fronteira)) {
+					if (vertices.get(i).getAdj().get(j).getDestino().getNome().equals(fronteira)) {
 						return true;
 					}
 				}
-			} else {
-				return false;
 			}
 		}
 		return false;

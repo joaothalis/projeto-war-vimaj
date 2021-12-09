@@ -7,8 +7,8 @@ public class Ataque {
 	public Territorio atacante;
 	public int tropasDisp;
 
-	public Ataque(Territorio atacante) {
-		this.atacante = atacante;
+	public Ataque() {
+	//	this.atacante = atacante;
 	}
 
 	private List<Rolagem> rolarDados(String cor, int qtdExercitos) {

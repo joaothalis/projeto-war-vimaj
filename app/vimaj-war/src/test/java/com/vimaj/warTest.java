@@ -11,16 +11,25 @@ public class warTest {
 	public void test01Batalha() {
 		Jogador j1 = new Jogador();
 		Jogador j2 = new Jogador();
+		
 		Batalha b = new Batalha();
 		BatalhaController B = new BatalhaController();
+		
 		Contiguidade C = new Contiguidade();
 		Ataque a = new Ataque();
 		Defesa d = new Defesa();
+		
 		EmbateDados E = new EmbateDados();
-		Transferencia T = new Tranferencia();
-
-		double actual = resultComponent.getResult();
-		double expected = 3;
-		Assert.assertEquals(expected, actual, 0.001);
+		Transferencia T = new Transferencia();
+		
+		Vertice v1 = new Vertice("China");
+		Vertice v2 = new Vertice("Japao");
+		Vertice v3 = new Vertice("India");
+		Vertice v4 = new Vertice("Brasil");
+		Territorio China;
+		Territorio Japao;
+		Territorio India;
+		Territorio Brasil;
+		
 	}
 }

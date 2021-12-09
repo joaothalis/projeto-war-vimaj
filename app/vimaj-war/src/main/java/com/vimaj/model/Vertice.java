@@ -7,7 +7,7 @@ public class Vertice {
 	String nome;
     List<LinhaVizinhanca> adj;
 
-    Vertice(String nome) {
+   public Vertice(String nome) {
         this.nome = nome;
         this.adj = new ArrayList<LinhaVizinhanca>();
     }
