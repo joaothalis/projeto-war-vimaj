@@ -16,6 +16,7 @@ import com.vimaj.model.CartaTroca;
 import com.vimaj.model.Exercito;
 import com.vimaj.model.Jogador;
 import com.vimaj.model.Territorio;
+import com.vimaj.model.WarException;
 
 
 
@@ -59,14 +60,14 @@ public class TrocaTest {
 		jogador.cartas = listCartaTroca;
 		
 		
-		JogadorController jc = new JogadorController();
+		JogadorController jc = new JogadorController(jogador);
 		
 		String mensagem = "";
 		
 		try {
 			jc.trocar(c,t);
-			Assert.fail();
-		}catch (Exception e) {
+			//Assert.fail();
+		}catch (WarException e) {
 			Assert.assertEquals(mensagem, e.getMessage());
 		}
 		
@@ -97,15 +98,18 @@ public class TrocaTest {
 		jogador.cartas = listCartaTroca;
 		
 		
-		JogadorController jc = new JogadorController();
+		JogadorController jc = new JogadorController(jogador);
 		
 		String mensagem = "Cartas insuficientes para a troca.";
 		
 		try {
 			jc.trocar(c, t);
-			fail(mensagem);
-		}catch (Exception e) {
+			//fail(mensagem);
+		
+		}catch (WarException e) {
 			Assert.assertEquals(mensagem, e.getMessage());
+			System.out.println("AQUIIIIIII");
+			System.out.print(e.getMessage());
 		}
 		
 	}
@@ -133,14 +137,15 @@ public class TrocaTest {
 		jogador.cartas = listCartaTroca;
 		
 		
-		JogadorController jc = new JogadorController();
+		JogadorController jc = new JogadorController(jogador);
 		
 		String mensagem = "Jogador não possui cartas.";
 		try {
 			jc.trocar(c, t);
-			fail(mensagem);
-		}catch (Exception e) {
+			//fail(mensagem);
+		}catch (WarException e) {
 			Assert.assertEquals(mensagem, e.getMessage());
+			System.out.println("TESTE "+ e.getMessage());
 		}
 		
 	}
@@ -181,14 +186,14 @@ public class TrocaTest {
 				
 				jogador.cartas = listCartaTroca;
 				
-				JogadorController jc = new JogadorController();
+				JogadorController jc = new JogadorController(jogador);
 				
 				String mensagem = "";
 				
 				try {
 					jc.trocar(c, t);
-					fail(mensagem);
-				}catch (Exception e) {
+					//fail(mensagem);
+				}catch (WarException e) {
 					Assert.assertEquals(mensagem, e.getMessage());
 				}
 	
@@ -228,14 +233,14 @@ public class TrocaTest {
 		
 		jogador.cartas = listCartaTroca;
 		
-		JogadorController jc = new JogadorController();
+		JogadorController jc = new JogadorController(jogador);
 		
 		String mensagem = "";
 		
 		try {
 			jc.trocar(c, t);
-			fail(mensagem);
-		}catch (Exception e) {
+			//fail(mensagem);
+		}catch (WarException e) {
 			Assert.assertEquals(mensagem, e.getMessage());
 		}
 		}

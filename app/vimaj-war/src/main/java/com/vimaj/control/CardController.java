@@ -11,8 +11,14 @@ public class CardController {
 	public List<Objetivo> deckObjetivo;
 	
 	private boolean distribuirObjetivos(Jogador j) {return false;}
-	private boolean verificarCartas(CartaTroca c) {return false;}
-	public void trocar(CartaTroca c) {}
+	private boolean verificarCartas(List<CartaTroca> c) {return false;}
+		
+	public void trocar(CartaTroca c, Jogador j) {
+	
+			j.qtdExercitos += 1;
+			j.cartas.clear();
+		
+	}
 	private void decrementarCartas(CartaTroca c) {}
 	private void receberExercitos(Jogador j, int bonus) {}
 	private void darCarta(Jogador j, CartaTroca c) {}
