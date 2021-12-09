@@ -1,12 +1,18 @@
 package com.vimaj.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vertice {
-	private String nome;
-	private List<LinhaVizinhanca> vizinho;
-	
-	private void addVizinho(LinhaVizinhanca linha) {
-		
-	}
+	String nome;
+    List<LinhaVizinhanca> adj;
+
+    Vertice(String nome) {
+        this.nome = nome;
+        this.adj = new ArrayList<LinhaVizinhanca>();
+    }
+
+    void addAdj(LinhaVizinhanca e) {
+        adj.add(e);
+    }
 }

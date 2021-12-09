@@ -1,6 +1,11 @@
 package com.vimaj.model;
 
 public class LinhaVizinhanca {
-	private Vertice origem;
-	private Vertice destino;
+	 Vertice origem;
+     Vertice destino;
+
+     LinhaVizinhanca(Vertice origem, Vertice destino) {
+         this.origem = origem;
+         this.destino = destino;
+     }
 }
