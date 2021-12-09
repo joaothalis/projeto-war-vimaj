@@ -12,8 +12,13 @@ public class warTest {
 		Jogador j1 = new Jogador();
 		Jogador j2 = new Jogador();
 
+<<<<<<< Updated upstream
 		//Batalha b = new Batalha();
 		BatalhaController B = new BatalhaController();
+=======
+		Batalha b = new Batalha();
+		//BatalhaController B = new BatalhaController();
+>>>>>>> Stashed changes
 
 		Contiguidade C = new Contiguidade();
 		Ataque a = new Ataque();

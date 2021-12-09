@@ -3,7 +3,7 @@ package com.vimaj.model;
 import java.util.List;
 
 public class Ataque {
-	public String Cor = "Vermelho";
+	public String cor = "Vermelho";
 	public Territorio atacante;
 	public int tropasDisp;
 
@@ -16,6 +16,7 @@ public class Ataque {
 	}
 
 	public boolean verificarQtdExercitos(Territorio atacante) {
+<<<<<<< Updated upstream
 		int quantidade;
 		quantidade = atacante.QtdExercitos(atacante);
 		if (quantidade > 1) {
@@ -23,5 +24,8 @@ public class Ataque {
 		} else {
 			return false;
 		}
+=======
+		return false;
+>>>>>>> Stashed changes
 	}
 }

@@ -3,12 +3,19 @@ package com.vimaj.model;
 public class Batalha {
 	public Territorio atacante;
 	public Territorio Defensor;
+<<<<<<< Updated upstream
 	public Contiguidade c;
 
 	public Batalha(Contiguidade C) {
 		this.c = C;
 	}
 
+=======
+	
+	protected Ataque jogadorAtacante = new Ataque();
+	protected Defesa jogadorDefensor = new Defesa();
+	
+>>>>>>> Stashed changes
 	public boolean verificarContiguidade(Territorio atacante, Territorio defensor) {
 		boolean resp;
 		resp = c.verificarContiguidade(atacante, defensor);
