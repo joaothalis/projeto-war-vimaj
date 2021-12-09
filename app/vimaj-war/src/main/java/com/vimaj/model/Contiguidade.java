@@ -12,10 +12,8 @@ public class Contiguidade {
 		arestas = new ArrayList<LinhaVizinhanca>();
 	}
 
-	public Vertice addVertice(String nome) {
-		Vertice v = new Vertice(nome);
-		vertices.add(v);
-		return v;
+	public void addVertice(Vertice nome) {	
+		vertices.add(nome);
 	}
 
 	public LinhaVizinhanca addAresta(Vertice origem, Vertice destino) {

@@ -27,12 +27,17 @@ public class warTest {
 		Territorio t3 = new Territorio("India");
 		Territorio t4 = new Territorio("Brasil");
 		Territorio t5 = new Territorio("Argentina");
+		
+	    C.addVertice(v1);
+		C.addAresta(China, Japao)
 
-		Vertice v1 = new Vertice("China");
+		
 		Vertice v2 = new Vertice("Japao");
 		Vertice v3 = new Vertice("India");
 		Vertice v4 = new Vertice("Brasil");
 		Vertice v5 = new Vertice("Argentina");
+		
+		C.addVertice("China");
 		
 		LinhaVizinhanca l1 = new LinhaVizinhanca(v1, v2);
 		LinhaVizinhanca l2 = new LinhaVizinhanca(v1, v3);
