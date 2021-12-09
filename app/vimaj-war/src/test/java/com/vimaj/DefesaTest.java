@@ -64,9 +64,4 @@ public class DefesaTest {
 		boolean actual = this.vizinhosAtacante.verificarContiguidade(brasil, peru);
 		Assert.assertEquals(false, actual);		
 	}
-	
-	@Test
-	public void test02QtdDados() {
-		
-	}
 }
