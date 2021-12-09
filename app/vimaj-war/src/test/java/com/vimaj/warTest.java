@@ -28,16 +28,21 @@ public class warTest {
 		Territorio t4 = new Territorio("Brasil");
 		Territorio t5 = new Territorio("Argentina");
 		
-	    /*C.addVertice(v1);
-		C.addAresta(China, Japao)
+	    
+		
 
-		
+		Vertice v1 = new Vertice("China");
+	    C.addVertice(v1);
 		Vertice v2 = new Vertice("Japao");
+		C.addVertice(v2);
 		Vertice v3 = new Vertice("India");
+		C.addVertice(v3);
 		Vertice v4 = new Vertice("Brasil");
+		C.addVertice(v4);
 		Vertice v5 = new Vertice("Argentina");
+		C.addVertice(v5);
 		
-		C.addVertice("China");
+		LinhaVizinhanca e = C.addAresta(v4, v5);
 		
 		LinhaVizinhanca l1 = new LinhaVizinhanca(v1, v2);
 		LinhaVizinhanca l2 = new LinhaVizinhanca(v1, v3);
@@ -50,7 +55,7 @@ public class warTest {
 		v2.addAdj(l3);
 		v3.addAdj(l4);
 		v4.addAdj(l5);
-		v5.addAdj(l6);*/
+		v5.addAdj(l6);
 
 	}
 }

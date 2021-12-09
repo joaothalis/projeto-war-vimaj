@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Territorio {
 	private String nome;
-	public Exercito ocupacao;
+	private Exercito ocupacao;
 	ArrayList<Exercito> ListaExercitos = new ArrayList<>();
 	
 	public Territorio(String nome) {
@@ -17,6 +17,14 @@ public class Territorio {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Exercito getOcupacao() {
+		return ocupacao;
+	}
+
+	public void setOcupacao(Exercito ocupacao) {
+		this.ocupacao = ocupacao;
 	}
 
 }
