@@ -1,5 +1,6 @@
 package com.vimaj.control;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.vimaj.model.Ataque;
@@ -100,7 +101,6 @@ public class BatalhaController extends Batalha {
 	}
 
 	public void conquista(Territorio atacante, Territorio defensor) {
-
 	}
 
 	public void perdasBatalha() {

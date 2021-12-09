@@ -13,7 +13,6 @@ public class DefesaTest {
 	private Territorio brasil;
 	private Territorio peru;
 	private Territorio chile;
-	private JogadorController jControl;
 	private Vertice v1;
 	private Vertice v2;
 	private Vertice v3;
@@ -30,8 +29,6 @@ public class DefesaTest {
 		this.brasil = new Territorio("Brazil");
 		this.peru = new Territorio("Peru");
 		this.chile = new Territorio("Chile");
-		
-		this.jControl = new JogadorController();
 	}
 	
 	private void initializeVizinhos() {
@@ -64,7 +61,7 @@ public class DefesaTest {
 	
 	@Test
 	public void test01EhContiguidade() {
-		boolean actual = this.vizinhosAtacante.Verificarcontiguidade(peru, brasil);
+		boolean actual = this.vizinhosAtacante.verificarContiguidade(brasil, peru);
 		Assert.assertEquals(false, actual);		
 	}
 	
