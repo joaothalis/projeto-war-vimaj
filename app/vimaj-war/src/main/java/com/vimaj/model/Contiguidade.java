@@ -5,36 +5,53 @@ import java.util.List;
 
 public class Contiguidade {
 	List<Vertice> vertices;
-    List<LinhaVizinhanca> arestas;
+	List<LinhaVizinhanca> arestas;
 
-    public Contiguidade() {
-        vertices = new ArrayList<Vertice>();
-        arestas = new ArrayList<LinhaVizinhanca>();
-    }
+	public Contiguidade() {
+		vertices = new ArrayList<Vertice>();
+		arestas = new ArrayList<LinhaVizinhanca>();
+	}
 
-    Vertice addVertice(String nome) {
-        Vertice v = new Vertice(nome);
-        vertices.add(v);
-        return v;
-    }
+	Vertice addVertice(String nome) {
+		Vertice v = new Vertice(nome);
+		vertices.add(v);
+		return v;
+	}
 
-    LinhaVizinhanca addAresta(Vertice origem, Vertice destino) {
-    	LinhaVizinhanca e = new LinhaVizinhanca(origem, destino);
-        origem.addAdj(e);
-        arestas.add(e);
-        return e;
-    }
+	LinhaVizinhanca addAresta(Vertice origem, Vertice destino) {
+		LinhaVizinhanca e = new LinhaVizinhanca(origem, destino);
+		origem.addAdj(e);
+		arestas.add(e);
+		return e;
+	}
 
-    public String toString() {
-        String r = "";
-        for (Vertice u : vertices) {
-            r += u.nome + " -> ";
-            for (LinhaVizinhanca e : u.adj) {
-                Vertice v = e.destino;
-                r += v.nome + ", ";
-            }
-            r += "\n";
-        }
-        return r;
-}
+	boolean Verificarcontiguidade(Territorio a, Territorio b) {
+		String inicial = a.getNome();
+		String fronteira = b.getNome();
+		for (int i = 0; i < vertices.size(); i++) {
+			if (vertices.get(i).getNome().equals(inicial)) {
+				for (int j = 0; j < arestas.size(); j++) {
+					if (vertices.get(i).getAdj().get(j).getOrigem().equals(fronteira)) {
+						return true;
+					}
+				}
+			} else {
+				return false;
+			}
+		}
+		return false;
+	}
+
+	public String toString() {
+		String r = "";
+		for (Vertice u : vertices) {
+			r += u.getNome() + " -> ";
+			for (LinhaVizinhanca e : u.getAdj()) {
+				Vertice v = e.getDestino();
+				r += v.getNome() + ", ";
+			}
+			r += "\n";
+		}
+		return r;
+	}
 }

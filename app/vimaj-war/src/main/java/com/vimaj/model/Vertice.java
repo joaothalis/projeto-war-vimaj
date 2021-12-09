@@ -13,6 +13,15 @@ public class Vertice {
     }
 
     void addAdj(LinhaVizinhanca e) {
-        adj.add(e);
+        getAdj().add(e);
     }
+
+	public String getNome() {
+		return nome;
+	}
+
+	public List<LinhaVizinhanca> getAdj() {
+		return adj;
+	}
+    
 }

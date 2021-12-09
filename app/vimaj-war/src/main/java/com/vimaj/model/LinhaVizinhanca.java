@@ -8,4 +8,12 @@ public class LinhaVizinhanca {
          this.origem = origem;
          this.destino = destino;
      }
+
+	public Vertice getOrigem() {
+		return origem;
+	}
+
+	public Vertice getDestino() {
+		return destino;
+	}
 }
